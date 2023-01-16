@@ -4,14 +4,13 @@ Pod::Spec.new do |s|
   s.license       = { :type => 'BSD' }
   s.ios.deployment_target  = '11.0'
  s.dependency 'Alamofire'
-  s.homepage      = "https://github.com/SystemRajkumar/xcframework"
+  s.homepage      = "https://github.com/SystemRajkumar/XcFramworkDemo"
   s.authors       = { 'Rajkumar' => 'rajkumar.kumawat@truworth.com' }
-  s.summary       = "It is a fruits name xcframwork"
+  s.summary       = "It is a fruits name XcFramworkDemo"
   s.description   = <<-DESC
-It is a fruits name xcframwork.
+It is a fruits name XcFramworkDemo.
 DESC
-  s.source        = { :git => "https://github.com/SystemRajkumar/xcframework.git", :tag => s.version }
-  s.vendored_framework = 'FruitName.xcframework'
+  s.source        = { :git => "https://github.com/SystemRajkumar/XcFramworkDemo.git", :tag => s.version }
   s.swift_version = "5.0"
 
 end
