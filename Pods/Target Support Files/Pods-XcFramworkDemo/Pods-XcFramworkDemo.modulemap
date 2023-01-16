@@ -1,0 +1,6 @@
+framework module Pods_XcFramworkDemo {
+  umbrella header "Pods-XcFramworkDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
