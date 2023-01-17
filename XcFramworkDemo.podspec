@@ -12,5 +12,5 @@ It is a fruits name XcFramworkDemo.
 DESC
   s.source        = { :git => "https://github.com/SystemRajkumar/XcFramworkDemo.git", :tag => s.version }
   s.swift_version = "5.0"
-
+s.vendored_frameworks = "XcFramworkDemo.xcframework"
 end

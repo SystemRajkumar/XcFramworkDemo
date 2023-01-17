@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB1D220E297670CB00EFA02F /* Pods_XcFramworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28269150C909567590CCB229 /* Pods_XcFramworkDemo.framework */; };
+		EB1D220F297670CB00EFA02F /* Pods_XcFramworkDemo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28269150C909567590CCB229 /* Pods_XcFramworkDemo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB80B80A29757B47008A2529 /* XcFramworkDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = EB80B80929757B47008A2529 /* XcFramworkDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB80B81229757C65008A2529 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80B81029757C65008A2529 /* MyViewController.swift */; };
 		EB80B81329757C65008A2529 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB80B81129757C65008A2529 /* MyViewController.xib */; };
 		EB80B81529757CDB008A2529 /* FrameworkFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80B81429757CDB008A2529 /* FrameworkFile.swift */; };
-		F6184195AB07BC9BC5AD3AA3 /* Pods_XcFramworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28269150C909567590CCB229 /* Pods_XcFramworkDemo.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB1D2210297670CC00EFA02F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EB1D220F297670CB00EFA02F /* Pods_XcFramworkDemo.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		28269150C909567590CCB229 /* Pods_XcFramworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcFramworkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6184195AB07BC9BC5AD3AA3 /* Pods_XcFramworkDemo.framework in Frameworks */,
+				EB1D220E297670CB00EFA02F /* Pods_XcFramworkDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +66,6 @@
 				6D265D4A98823ADAD7F46A82 /* Pods-XcFramworkDemo.debug.xcconfig */,
 				2847DFCCAC92CC7DF796AEB0 /* Pods-XcFramworkDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -107,6 +121,7 @@
 				EB80B80229757B47008A2529 /* Sources */,
 				EB80B80329757B47008A2529 /* Frameworks */,
 				EB80B80429757B47008A2529 /* Resources */,
+				EB1D2210297670CC00EFA02F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,6 +338,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D265D4A98823ADAD7F46A82 /* Pods-XcFramworkDemo.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -334,6 +350,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +360,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CustomFramwork.XcFramworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -354,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2847DFCCAC92CC7DF796AEB0 /* Pods-XcFramworkDemo.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -365,6 +386,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,6 +396,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CustomFramwork.XcFramworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
