@@ -14,7 +14,7 @@ public class FrameworkFile{
     
     public func myController() -> UIViewController{
         let bundle = Bundle(for: MyViewController.self)
-        let vc = MyViewController(nibName: "MyViewController", bundle: bundle)
+        let vc = MyViewController(nibName: "MyViewController", bundle: nil)
         return vc
     }
 }
